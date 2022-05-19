@@ -14,6 +14,7 @@ mongoose.connect(process.env.MONGO_DB_URL)
     });
 
 //apis router
+app.use(express.json());
 app.use("/api/auth", authRoute);
 
 
