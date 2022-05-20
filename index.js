@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_DB_URL)
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/user", userRoute);
-app.use("/api/product", productRoute);
+app.use("/api/products", productRoute);
 
 
 
